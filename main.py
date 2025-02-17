@@ -1,9 +1,7 @@
 ### INF601 - Advanced Programming in Python
 ### Jim Pinto
 ### Mini Project 1
-import pprint
 import yfinance as yf
-from datetime import datetime, timedelta
 import numpy as np
 import matplotlib.pyplot as plt
 import os
