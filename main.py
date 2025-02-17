@@ -6,6 +6,10 @@ import yfinance as yf
 from datetime import datetime, timedelta
 import numpy as np
 import matplotlib.pyplot as plt
+import os
+
+os.makedirs("charts", exist_ok=True)
+
 
 mytickers = ["MSFT", "AAPL", "GOOG", "NVDA", "AMC"]
 
