@@ -17,32 +17,22 @@ This project will be using the packages NumPy and Matplotlib in order to create 
 pip install -r requirements.txt
 ```
 
-### Installing
-
-* How/where to download your program
-* Any modifications needed to be made to files/folders
 
 ### Executing program
 
-* How to run the program
-* Step-by-step bullets
 ```
-code blocks for commands
+python main.py
 ```
 
-## Help
+### Output
 
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
+This should create 5 graphs in charts/ for each of the fice stocks. 
 
 ## Authors
 
 Contributors names and contact info
 
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
+ex. Jim Pinto  
 
 ## Version History
 
@@ -54,7 +44,7 @@ ex. [@DomPizzie](https://twitter.com/dompizzie)
 
 ## License
 
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+This project is licensed under the [Jim Pinto] License - see the LICENSE.md file for details
 
 ## Acknowledgments
 
