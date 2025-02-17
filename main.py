@@ -3,28 +3,30 @@
 ### Mini Project 1
 import pprint
 import yfinance as yf
+from datetime import datetime, timedelta
+import numpy as np
+import matplotlib.pyplot as plt
 
 mytickers = ["MSFT", "AAPL", "GOOG", "NVDA", "AMC"]
-
-mydata = {}
 
 
 mytickers.sort()
 for ticker in mytickers:
     result = yf.Ticker(ticker)
-    mydata[ticker] ={'ticker': ticker,
-                     'dayHigh': result.info['dayHigh']
-                     }
+    # get historical market data
+    hist = result.history(period="10d")
+    last10days = []
+    for date in hist['Close']:
+        last10days.append(date)
+    myarray = np.array(last10days)
+    plt.plot(myarray)
+    plt.show()
 
-pprint.pprint(mydata)
 
 
-#msft = yf.Ticker("MSFT")
 
-# get all stock info
-#pprint.pprint(msft.info)
 
-# get historical market data
-#hist = msft.history(period="10d")
 
-#pprint.pprint(hist)
+
+
+
